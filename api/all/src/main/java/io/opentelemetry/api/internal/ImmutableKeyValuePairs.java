@@ -31,7 +31,7 @@ import javax.annotation.concurrent.Immutable;
  */
 @Immutable
 public abstract class ImmutableKeyValuePairs<K, V> {
-  private final Object[] data;
+  private Object[] data;
   private int hashcode;
 
   /**
