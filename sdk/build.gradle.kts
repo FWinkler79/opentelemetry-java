@@ -7,4 +7,7 @@ subprojects {
       archivesName.set("opentelemetry-sdk-${proj.name}")
     }
   }
+  tasks.withType<JavaCompile> {
+    options.compilerArgs.add("-parameters")
+  }
 }

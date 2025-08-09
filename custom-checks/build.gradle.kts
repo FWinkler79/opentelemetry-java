@@ -43,9 +43,9 @@ tasks {
     }
   }
 
-  // only test on java 17+
+  // only test on java 21+
   val testJavaVersion: String? by project
-  if (testJavaVersion != null && Integer.valueOf(testJavaVersion) < 17) {
+  if (testJavaVersion != null && Integer.valueOf(testJavaVersion) < 21) {
     test {
       enabled = false
     }
@@ -53,7 +53,7 @@ tasks {
 }
 
 tasks.withType<Test>().configureEach {
-  // required on jdk17
+  // required on jdk21
   jvmArgs("--add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED")
   jvmArgs("--add-opens=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED")
   jvmArgs("--add-opens=jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED")

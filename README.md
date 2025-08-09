@@ -1,5 +1,27 @@
 # OpenTelemetry Java
 
+
+## Building
+
+```
+./gradlew build
+./gradlew publishToMavenLocal
+
+https://github.com/spring-projects/spring-framework/issues/31998#issuecomment-1884479117
+https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-6.1-Release-Notes
+https://docs.spring.io/spring-data/relational/reference/object-mapping.html
+
+https://github.com/open-telemetry/opentelemetry-java/blob/main/sdk/metrics/src/main/java/io/opentelemetry/sdk/metrics/data/MetricData.java
+
+https://opentelemetry.io/docs/languages/java/intro/#dependencies-and-boms
+
+https://opentelemetry.io/docs/specs/otel/metrics/sdk/#metricreader
+https://opentelemetry.io/docs/specs/otel/metrics/data-model/
+
+```
+
+## Original README
+
 [![Maven Central][maven-image]][maven-url]
 [![Coverage Status][codecov-image]][codecov-url]
 [![FOSSA License Status](https://app.fossa.com/api/projects/custom%2B162%2Fgithub.com%2Fopen-telemetry%2Fopentelemetry-java.svg?type=shield&issueType=license)](https://app.fossa.com/projects/custom%2B162%2Fgithub.com%2Fopen-telemetry%2Fopentelemetry-java?ref=badge_shield&issueType=license)

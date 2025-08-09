@@ -12,14 +12,14 @@ otelJava.moduleName.set("io.opentelemetry.javadocs")
 
 tasks {
   withType<JavaCompile>().configureEach {
-    sourceCompatibility = "17"
-    targetCompatibility = "17"
-    options.release.set(17)
+    sourceCompatibility = "21"
+    targetCompatibility = "21"
+    options.release.set(21)
   }
 
-  // only test on java 17+
+  // only test on java 21+
   val testJavaVersion: String? by project
-  if (testJavaVersion != null && Integer.valueOf(testJavaVersion) < 17) {
+  if (testJavaVersion != null && Integer.valueOf(testJavaVersion) < 21) {
     test {
       enabled = false
     }

@@ -36,6 +36,10 @@ final class ArrayBackedAttributes extends ImmutableKeyValuePairs<AttributeKey<?>
     super(data);
   }
 
+  ArrayBackedAttributes() {
+    super(new Object[0]);
+  }
+
   @Override
   public AttributesBuilder toBuilder() {
     return new ArrayBackedAttributesBuilder(new ArrayList<>(data()));
