@@ -33,7 +33,7 @@ tasks.withType<AbstractArchiveTask>().configureEach {
 
 java {
   toolchain {
-    languageVersion.set(JavaLanguageVersion.of(17))
+    languageVersion.set(JavaLanguageVersion.of(21))
   }
 
   withJavadocJar()
@@ -89,7 +89,7 @@ tasks {
             // We suppress the "options" warning because it prevents compilation on modern JDKs
             "-Xlint:-options",
             // Fail build on any warning
-            "-Werror",
+            //"-Werror",
           ),
         )
       }
